@@ -32,6 +32,12 @@ public class Do_while_6 {
 		System.out.println("Introduce la cantidad de numeros que vas a introducir");
 		contador = teclado.nextInt();
 		
+		/*
+		 * Si el valor que trae contador es menor o igual a 0
+		 * Este entrara en un nuevo proceso en el ciclo do-While
+		 * Y este se va a ejecutar siempre y cuando se le asigne un numero negativo a contador
+		 * para culminar el ciclo, contador debe tener un valor entero positivo
+		 * */
 		do {
 			if(contador <= 0) {
 				System.out.println("El numero ingresado debe ser un entero positivo. Ingresa un nuevo valor: ");
@@ -39,7 +45,12 @@ public class Do_while_6 {
 			}
 		}while(contador <= 0);
 		
-		// Si la contrador Trae un valor negativo no entra el ciclo
+		
+		/*
+		 * Cuando Contador traiga un valor entero positivo 
+		 * entrara al ciclo While y va a solicitar la contidad
+		 * que tiene asignado contador y esa seran las iteraciones del ciclo 
+		 * */
 		while(contador > 0){
 			System.out.println("Introduce un Numero: ");
 			numero = teclado.nextInt();
